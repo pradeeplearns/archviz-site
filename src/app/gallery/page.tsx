@@ -1,9 +1,7 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import ImageModal from '@/components/ImageModal';
 import Header from '@/components/Header';
 
@@ -223,7 +221,6 @@ export default function Gallery() {
   const [images, setImages] = useState<typeof allImages>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [selectedImage, setSelectedImage] = useState<typeof allImages[0] | null>(null);
-  const router = useRouter();
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
@@ -236,10 +233,6 @@ export default function Gallery() {
       setIsLoading(false);
     }
   }, []);
-
-  const handleImageClick = (imagePath: string) => {
-    router.push(`/gallery/${encodeURIComponent(imagePath)}`);
-  };
 
   if (isLoading) {
     return (
