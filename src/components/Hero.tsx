@@ -10,38 +10,21 @@ const OptimizedImage = dynamic(() => import('@/components/OptimizedImage'), { ss
 // Selected images from each category
 const carouselImages = [
   {
-    src: '/images/exterior/buildings/buildings-img-6.webp',
-    alt: 'Buildings'
-  },
-  {
-    src: '/images/exterior/buildings/buildings-img-10.webp',
-    alt: 'Buildings'
-  },
-  {
-    src: '/images/exterior/buildings/buildings-img-1.webp',
-    alt: 'Buildings'
-  },
-  {
-    src: '/images/exterior/buildings/buildings-img-5.webp',
-    alt: 'Buildings'
-  },
-  {
-    src: '/images/exterior/exhibition/exhibition-img-10.webp',
-    alt: 'Exhibition'
-  },
-  {
     src: '/images/exterior/villa/villa-img-1.webp',
-    alt: 'Villa'
+    alt: 'Villa Exterior'
   },
   {
     src: '/images/exterior/villa/villa-img-10.webp',
-    alt: 'Villa'
+    alt: 'Villa Exterior'
   },
   {
-    src: '/images/exterior/villa/villa-img-3.webp',
-    alt: 'Villa'
+    src: '/images/interior/Living Room.jpeg',
+    alt: 'Living Room Interior'
+  },
+  {
+    src: '/images/interior/Bed Room 2.jpeg',
+    alt: 'Bedroom Interior'
   }
-
 ];
 
 export default function Hero() {
@@ -142,7 +125,7 @@ export default function Hero() {
             key={index}
             onClick={() => handleDotClick(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
-              index === currentImageIndex ? 'bg-white scale-125' : 'bg-white/40 hover:bg-white/70'
+              index === currentImageIndex ? 'bg-black scale-125' : 'bg-black/40 hover:bg-black/70'
             }`}
             aria-label={`Go to slide ${index + 1}`}
           />
@@ -153,19 +136,19 @@ export default function Hero() {
       <div className="relative h-full flex flex-col justify-between px-8 py-12 z-30">
         {/* Top Section with Logo and Menu */}
         <div className="w-full flex justify-between items-center">
-          <h1 className="text-3xl font-light text-white">
+          <h1 className="text-3xl font-light text-black">
             <span className="font-bold">ARCH</span>VIZ
           </h1>
           
           <button 
-            className="text-white hover:text-gray-300 transition focus:outline-none"
+            className="text-black hover:text-gray-600 transition focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span className="sr-only">Menu</span>
             <div className="flex flex-col space-y-2">
-              <span className={`block w-8 h-0.5 bg-white transform transition duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
-              <span className={`block w-8 h-0.5 bg-white transition duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-              <span className={`block w-8 h-0.5 bg-white transform transition duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
+              <span className={`block w-8 h-0.5 bg-black transform transition duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2.5' : ''}`}></span>
+              <span className={`block w-8 h-0.5 bg-black transition duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`block w-8 h-0.5 bg-black transform transition duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2.5' : ''}`}></span>
             </div>
           </button>
         </div>
@@ -203,20 +186,20 @@ export default function Hero() {
                   </li>
                   <li>
                     <Link 
-                      href="/exterior/buildings" 
+                      href="/about" 
                       className="text-4xl font-light text-white hover:text-gray-300 transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      BUILDINGS
+                      ABOUT
                     </Link>
                   </li>
                   <li>
                     <Link 
-                      href="/exterior/exhibition" 
+                      href="/architectural-still-images" 
                       className="text-4xl font-light text-white hover:text-gray-300 transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      EXHIBITION
+                      ARCHITECTURAL STILL IMAGES
                     </Link>
                   </li>
                   <li>
@@ -225,16 +208,16 @@ export default function Hero() {
                       className="text-4xl font-light text-white hover:text-gray-300 transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      VILLA
+                      ARCHITECTURAL WALKTHROUGH
                     </Link>
                   </li>
                   <li>
                     <Link 
-                      href="/about" 
+                      href="/exterior/exhibition" 
                       className="text-4xl font-light text-white hover:text-gray-300 transition"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      ABOUT
+                      EXHIBITION/EVENT
                     </Link>
                   </li>
                   <li>
@@ -254,16 +237,16 @@ export default function Hero() {
         
         {/* Bottom Section with Title and CTA */}
         <div className="max-w-3xl">
-          <h2 className="text-5xl md:text-7xl font-light text-white mb-6 leading-tight">
+          <h2 className="text-5xl md:text-7xl font-light text-black mb-6 leading-tight">
             Architectural <br /><span className="font-bold">Visualization</span>
           </h2>
-          <p className="text-xl text-gray-200 mb-8 max-w-2xl">
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl">
             Bringing architectural designs to life through stunning 3D visualizations
           </p>
           <div className="flex space-x-6">
             <Link 
-              href="/exterior/buildings" 
-              className="px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-black transition duration-300 text-lg font-light"
+              href="/architectural-still-images" 
+              className="px-8 py-3 border-2 border-black text-black hover:bg-black hover:text-white transition duration-300 text-lg font-light"
             >
               VIEW PROJECTS
             </Link>
@@ -271,10 +254,10 @@ export default function Hero() {
         </div>
         
         {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white text-sm flex flex-col items-center">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-black text-sm flex flex-col items-center">
           <p className="mb-2 text-xs tracking-widest">SCROLL</p>
-          <div className="w-0.5 h-8 bg-white/40">
-            <div className="w-full h-1/3 bg-white animate-pulse"></div>
+          <div className="w-0.5 h-8 bg-black/40">
+            <div className="w-full h-1/3 bg-black animate-pulse"></div>
           </div>
         </div>
       </div>

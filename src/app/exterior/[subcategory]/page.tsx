@@ -8,19 +8,19 @@ import ClientGallery from '@/components/ClientGallery';
 // Get the category info for the title and description
 const categoryInfo = {
   buildings: {
-    title: 'BUILDINGS',
+    title: 'Architectural Still Images',
     description: 'Architectural visualizations of commercial and residential buildings.',
     folderPath: '/images/exterior/buildings',
     defaultImage: '/images/exterior/buildings/buildings-img-1.webp',
   },
   exhibition: {
-    title: 'EXHIBITION',
+    title: 'Exhibition/Event',
     description: 'Exhibition spaces and pavilion designs for showcasing products and innovations.',
     folderPath: '/images/exterior/exhibition',
     defaultImage: '/images/exterior/exhibition/exhibition-img-1.webp',
   },
   villa: {
-    title: 'VILLA',
+    title: 'Architectural Walkthrough',
     description: 'Luxury villas and high-end residential architecture.',
     folderPath: '/images/exterior/villa',
     defaultImage: '/images/exterior/villa/villa-img-1.webp',

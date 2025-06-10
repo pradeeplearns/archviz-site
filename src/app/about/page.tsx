@@ -9,24 +9,12 @@ export default function AboutPage() {
       <main>
         {/* Hero Section */}
         <section className="relative h-[40vh]">
-          <div className="absolute inset-0">
-            <Image
-              src="/images/about-hero.jpg"
-              alt="About Me"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-              // This is a placeholder image that will need to be added
-            />
-            <div className="absolute inset-0 bg-black/50" />
-          </div>
           
           <div className="relative h-full flex flex-col justify-center px-6 container mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               About Me
             </h1>
-            <p className="text-xl text-gray-200 max-w-xl">
+            <p className="text-xl text-black max-w-xl">
               Learn more about my experience and approach to architectural visualization.
             </p>
           </div>
@@ -47,13 +35,13 @@ export default function AboutPage() {
               </div>
               
               <div>
-                <h2 className="text-3xl font-bold mb-6">Hi, I'm [Your Name]</h2>
+                <h2 className="text-3xl font-bold mb-6">Hi, I'm Sandeep</h2>
                 <p className="text-lg text-gray-700 mb-4">
-                  I'm a passionate 3D renderer and graphic designer with over [X] years of experience 
+                  I'm a passionate 3D renderer and graphic designer with over 10+ years of experience 
                   creating photorealistic architectural visualizations for clients worldwide.
                 </p>
                 <p className="text-lg text-gray-700 mb-4">
-                  My journey in architectural visualization began with a background in [relevant field], 
+                  My journey in architectural visualization began with a background in animation and graphic design, 
                   which provided me with a deep understanding of architectural principles and design aesthetics.
                 </p>
                 <p className="text-lg text-gray-700 mb-4">
@@ -81,7 +69,7 @@ export default function AboutPage() {
                   <li>Blender</li>
                   <li>3ds Max</li>
                   <li>SketchUp</li>
-                  <li>Rhino</li>
+                  <li>AutoCAD</li>
                 </ul>
               </div>
               
@@ -115,7 +103,7 @@ export default function AboutPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">1</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">1</div>
                 <h3 className="text-xl font-bold mb-2">Consultation</h3>
                 <p className="text-gray-600">
                   I start by understanding your project requirements, vision, and goals.
@@ -123,7 +111,7 @@ export default function AboutPage() {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">2</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">2</div>
                 <h3 className="text-xl font-bold mb-2">3D Modeling</h3>
                 <p className="text-gray-600">
                   Creating accurate 3D models based on architectural plans and specifications.
@@ -131,7 +119,7 @@ export default function AboutPage() {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">3</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">3</div>
                 <h3 className="text-xl font-bold mb-2">Materials & Lighting</h3>
                 <p className="text-gray-600">
                   Applying realistic materials and setting up professional lighting to enhance the scene.
@@ -139,7 +127,7 @@ export default function AboutPage() {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">4</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">4</div>
                 <h3 className="text-xl font-bold mb-2">Final Rendering</h3>
                 <p className="text-gray-600">
                   Producing high-quality renders with post-processing for the perfect finish.
