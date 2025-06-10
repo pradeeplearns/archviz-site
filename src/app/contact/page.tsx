@@ -9,24 +9,12 @@ export default function ContactPage() {
       <main>
         {/* Hero Section */}
         <section className="relative h-[40vh]">
-          <div className="absolute inset-0">
-            <Image
-              src="/images/contact-hero.jpg"
-              alt="Contact Me"
-              fill
-              className="object-cover"
-              priority
-              sizes="100vw"
-              // This is a placeholder image that will need to be added
-            />
-            <div className="absolute inset-0 bg-white/90" />
-          </div>
           
           <div className="relative h-full flex flex-col justify-center px-6 container mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-black mb-4">
               Get in Touch
             </h1>
-            <p className="text-xl text-gray-200 max-w-xl">
+            <p className="text-xl text-black max-w-xl">
               Let's discuss how I can help bring your architectural vision to life.
             </p>
           </div>
