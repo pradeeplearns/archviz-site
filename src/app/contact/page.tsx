@@ -19,7 +19,7 @@ export default function ContactPage() {
               sizes="100vw"
               // This is a placeholder image that will need to be added
             />
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-white/90" />
           </div>
           
           <div className="relative h-full flex flex-col justify-center px-6 container mx-auto">
@@ -173,7 +173,7 @@ export default function ContactPage() {
                   <div>
                     <button
                       type="submit"
-                      className="w-full px-6 py-3 bg-black text-white font-medium rounded hover:bg-gray-800 transition"
+                      className="w-full px-6 py-3 bg-gray-800 text-white font-medium rounded hover:bg-gray-700 transition"
                     >
                       Send Message
                     </button>

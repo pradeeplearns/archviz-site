@@ -24,12 +24,12 @@ export default function Header() {
     const pathname = window.location.pathname;
     if (pathname === '/') {
       setActiveMenu('home');
-    } else if (pathname.includes('/exterior/buildings')) {
-      setActiveMenu('buildings');
-    } else if (pathname.includes('/exterior/exhibition')) {
-      setActiveMenu('exhibition');
+    } else if (pathname.includes('/architectural-still-images')) {
+      setActiveMenu('architectural-still-images');
     } else if (pathname.includes('/exterior/villa')) {
-      setActiveMenu('villa');
+      setActiveMenu('architectural-walkthrough');
+    } else if (pathname.includes('/exterior/exhibition')) {
+      setActiveMenu('exhibition-event');
     } else if (pathname.includes('/about')) {
       setActiveMenu('about');
     } else if (pathname.includes('/contact')) {
@@ -49,23 +49,23 @@ export default function Header() {
             {/* Logo */}
             <Link href="/" className="text-white text-2xl md:text-3xl font-light">
               <Image
-                src="/full-logo.jpeg"
+                src="/logo-bg2.png"
                 alt="Logo"
-                width={96}
-                height={96}
+                width={196}
+                height={196}
                 className="w-24 h-24 object-contain"
               />
             </Link>
             {/* Hamburger Menu (always visible) */}
             <button 
-              className="text-white hover:text-gray-300 transition focus:outline-none"
+              className="text-black hover:text-gray-600 transition focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Menu</span>
               <div className="flex flex-col space-y-1">
-                <span className={`block w-8 h-1 bg-white transform transition duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-                <span className={`block w-8 h-1 bg-white transition duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-                <span className={`block w-8 h-1 bg-white transform transition duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+                <span className={`block w-8 h-1 bg-black transform transition duration-300 ${isMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+                <span className={`block w-8 h-1 bg-black transition duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+                <span className={`block w-8 h-1 bg-black transform transition duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
               </div>
             </button>
           </div>
@@ -93,23 +93,18 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/gallery" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
-                GALLERY
-              </Link>
-            </li>
-            <li>
-              <Link href="/exterior/buildings" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
-                BUILDINGS
-              </Link>
-            </li>
-            <li>
-              <Link href="/exterior/exhibition" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
-                EXHIBITION
+              <Link href="/architectural-still-images" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
+                ARCHITECTURAL STILL IMAGES
               </Link>
             </li>
             <li>
               <Link href="/exterior/villa" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
-                VILLA
+                ARCHITECTURAL WALKTHROUGH
+              </Link>
+            </li>
+            <li>
+              <Link href="/exterior/exhibition" className="text-5xl font-extrabold text-white hover:text-blue-400 transition" onClick={() => setIsMenuOpen(false)}>
+                EXHIBITION/EVENT
               </Link>
             </li>
             <li>

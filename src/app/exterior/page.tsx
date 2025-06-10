@@ -5,19 +5,19 @@ import Image from 'next/image';
 
 const categories = [
   {
-    title: 'Buildings',
+    title: 'Architectural Still Images',
     slug: 'buildings',
     imageUrl: '/images/exterior/buildings/DC_CAM_001.jpg',
     description: 'Architectural visualizations of commercial and residential buildings.',
   },
   {
-    title: 'Exhibition',
+    title: 'Exhibition/Event',
     slug: 'exhibition',
     imageUrl: '/images/exterior/exhibition/1.jpg',
     description: 'Exhibition spaces and pavilion designs for showcasing products and innovations.',
   },
   {
-    title: 'Villa',
+    title: 'Architectural Walkthrough',
     slug: 'villa',
     imageUrl: '/images/exterior/villa/VK_CAM_001_FFF.jpg',
     description: 'Luxury villas and high-end residential architecture.',
@@ -41,7 +41,7 @@ export default function ExteriorPage() {
               sizes="100vw"
               unoptimized
             />
-            <div className="absolute inset-0 bg-black/50" />
+            <div className="absolute inset-0 bg-white/90" />
           </div>
           
           <div className="relative h-full flex flex-col justify-center px-6 container mx-auto">
@@ -80,7 +80,7 @@ export default function ExteriorPage() {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">1</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">1</div>
                 <h3 className="text-xl font-bold mb-2">Design Analysis</h3>
                 <p className="text-gray-600">
                   I start by analyzing architectural plans and specifications to understand the project's vision and requirements.
@@ -88,7 +88,7 @@ export default function ExteriorPage() {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">2</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">2</div>
                 <h3 className="text-xl font-bold mb-2">3D Modeling</h3>
                 <p className="text-gray-600">
                   Building detailed 3D models that accurately represent the architectural design.
@@ -96,7 +96,7 @@ export default function ExteriorPage() {
               </div>
               
               <div className="text-center">
-                <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center text-white text-xl font-bold mx-auto mb-4">3</div>
+                <div className="w-16 h-16 bg-gray-200 border-2 border-gray-300 rounded-full flex items-center justify-center text-gray-800 text-xl font-bold mx-auto mb-4">3</div>
                 <h3 className="text-xl font-bold mb-2">Final Rendering</h3>
                 <p className="text-gray-600">
                   Creating photorealistic renders with accurate lighting, materials, and environmental elements.

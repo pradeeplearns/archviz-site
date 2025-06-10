@@ -236,7 +236,7 @@ export default function Gallery() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#23272b]">
+      <div className="min-h-screen bg-white">
         <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-gray-600">Loading...</div>
@@ -247,7 +247,7 @@ export default function Gallery() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-[#23272b]">
+      <div className="min-h-screen bg-white">
         <Header />
         <div className="container mx-auto px-4 py-8">
           <div className="text-center text-red-600">Error: {error}</div>
@@ -257,7 +257,7 @@ export default function Gallery() {
   }
 
   return (
-    <div className="min-h-screen bg-[#23272b]">
+    <div className="min-h-screen bg-white">
       <Header />
       <div className="container mx-auto px-4 py-8 pt-20">
         <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
