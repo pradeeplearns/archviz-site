@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import ContactForm from '@/components/ContactForm';
 
 export default function ContactPage() {
   return (
@@ -40,7 +41,7 @@ export default function ContactPage() {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-medium text-gray-900">Email</h3>
-                      <p className="mt-1 text-gray-700">info@motionandform.com</p>
+                      <p className="mt-1 text-gray-700">motionandform3dstudio@motionandform.in</p>
                     </div>
                   </div>
                   
@@ -52,7 +53,7 @@ export default function ContactPage() {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-medium text-gray-900">Phone</h3>
-                      <p className="mt-1 text-gray-700">+1 (123) 456-7890</p>
+                      <p className="mt-1 text-gray-700">+91 9599509834</p>
                     </div>
                   </div>
                   
@@ -65,7 +66,7 @@ export default function ContactPage() {
                     </div>
                     <div className="ml-4">
                       <h3 className="text-lg font-medium text-gray-900">Location</h3>
-                      <p className="mt-1 text-gray-700">New York, NY</p>
+                      <p className="mt-1 text-gray-700">Delhi, India</p>
                     </div>
                   </div>
                 </div>
@@ -101,72 +102,7 @@ export default function ContactPage() {
               {/* Contact Form */}
               <div>
                 <h2 className="text-3xl font-bold mb-6">Send a Message</h2>
-                <form className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      placeholder="john@example.com"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                      Subject
-                    </label>
-                    <input
-                      type="text"
-                      id="subject"
-                      name="subject"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      placeholder="Project Inquiry"
-                      required
-                    />
-                  </div>
-                  
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Message
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent"
-                      placeholder="Tell me about your project..."
-                      required
-                    ></textarea>
-                  </div>
-                  
-                  <div>
-                    <button
-                      type="submit"
-                      className="w-full px-6 py-3 bg-gray-800 text-white font-medium rounded hover:bg-gray-700 transition"
-                    >
-                      Send Message
-                    </button>
-                  </div>
-                </form>
+                <ContactForm />
               </div>
             </div>
           </div>
